@@ -10,7 +10,7 @@ def get_service():
 
 @app.get("/redis")
 def insert_redis_data():
-    redis_client = from_url(url="redis://13.60.98.95:6379", db=0)
+    redis_client = from_url(url="redis://redis:alpine", db=0)
     redis_client.set("hemanth1", "enjoy pandagoooo1234")
     return {"status":"success"}
 
